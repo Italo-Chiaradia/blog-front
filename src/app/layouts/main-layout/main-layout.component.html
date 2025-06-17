@@ -1,0 +1,33 @@
+<header class="header">
+  <h1 class="title">Simple Blog</h1>
+
+  <ul class="nav nav-btns">
+    <li>
+      <a href="/">Posts</a>
+    </li>
+    <li>
+      <a href="/">About</a>
+    </li>
+    <li>
+      <a href="/">Contact</a>
+    </li>
+  </ul>
+
+  <button class="menu-btn"  (click)="toggleMenu()">
+    <mat-icon class="menu-icon" fontIcon="menu"></mat-icon>
+  </button>
+
+</header>
+<ul class="nav nav-btns-toggle" [class.show]="isMenuOpen">
+  <li>
+    <a href="/">Posts</a>
+  </li>
+  <li>
+    <a href="/">About</a>
+  </li>
+  <li>
+    <a href="/">Contact</a>
+  </li>
+</ul>
+
+<router-outlet></router-outlet>
